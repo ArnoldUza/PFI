@@ -1,0 +1,177 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#conteneur {
+    height: 100vh;
+    padding: 0;
+    background-color:white;
+    display: grid;
+    border: none;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-rows: 80px 2fr 80px;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    margin: auto;
+}
+
+#profil {
+  width: 100px;
+  height: 100px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titre {
+    display: inline;
+    padding-bottom: 1em;
+    font-size: x-large;
+    padding: 25px 15px;
+}
+
+@media screen and (max-width: 100px) {
+    header nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .droite {
+        float: none;
+    }
+}
+
+footer {
+    padding: 1em;
+}
+
+header {
+    padding-top: 1em;
+    color: white;
+    grid-area: header;
+    background-color: black;
+}
+
+
+main {
+    padding: 1em;
+    grid-area: main;
+    width: 80%;
+    background-color: white;
+}
+
+
+img {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+body div header nav a:hover,
+body div header nav div a:hover {
+    background-color: rgb(33, 33, 199);
+}
+
+body div header nav a,
+body div header nav div a {
+    padding: 25px 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.droite {
+    float: right;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+.course-cell {
+    font-size: 0.9em;
+    color: #000;
+}
+
+.course-cell strong {
+    display: block;
+    font-weight: bold;
+}
+
+.course-cell em {
+    font-style: italic;
+}
+
+.educ {
+    background-color: lightblue;
+}
+
+.math{
+    background-color: lightcoral;
+}
+
+.français {
+    background-color: lightgoldenrodyellow;
+}
+
+.exploitation {
+    background-color: lightgreen;
+}
+
+.ethique {
+    background-color: lightseagreen;
+}
+
+.web {
+    background-color: aqua;
+}
+.description {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
