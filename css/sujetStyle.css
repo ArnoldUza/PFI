@@ -15,7 +15,7 @@ body {
     grid-template-rows: 80px 2fr 80px;
     grid-template-areas:
         "header header header header"
-        "main main main main"
+        "aside main main main"
         "footer footer footer footer";
     margin: auto;
 }
@@ -26,8 +26,6 @@ body {
   margin-left: 80px;
   margin-bottom: 10px;
   border-radius: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #logo {
@@ -57,6 +55,7 @@ body {
     }
 }
 
+aside,
 footer {
     padding: 1em;
 }
@@ -68,12 +67,24 @@ header {
     background-color: black;
 }
 
+aside {
+    grid-area: aside;
+    background-color: darkblue;
+    color: white;
+}
+
 
 main {
     padding: 1em;
+    font-size: larger;
     grid-area: main;
     width: 80%;
     background-color: white;
+}
+
+article {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -90,7 +101,9 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+figCaption {
+    font-style: italic;
+}
 
 body div header nav a:hover,
 body div header nav div a:hover {
@@ -109,69 +122,8 @@ body div header nav div a {
     float: right;
 }
 
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f4f4f4;
-}
-
-td {
-    background-color: #f9f9f9;
-}
-
-.course-cell {
-    font-size: 0.9em;
-    color: #000;
-}
-
-.course-cell strong {
-    display: block;
-    font-weight: bold;
-}
-
-.course-cell em {
-    font-style: italic;
-}
-
-.educ {
-    background-color: lightblue;
-}
-
-.math{
-    background-color: lightcoral;
-}
-
-.français {
-    background-color: lightgoldenrodyellow;
-}
-
-.exploitation {
-    background-color: lightgreen;
-}
-
-.ethique {
-    background-color: lightseagreen;
-}
-
-.web {
-    background-color: aqua;
-}
-.description {
-    margin-bottom: 10px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+.complément {
+    font-size: large;
+    font-weight: bolder;
+    font-style: oblique;
 }

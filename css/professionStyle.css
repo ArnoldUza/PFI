@@ -34,15 +34,15 @@ body {
     width: 50px;
     height: 50px;
     margin-left: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    vertical-align: middle;
 }
 
 .titre {
+    vertical-align: middle;
     display: inline;
-    padding-bottom: 1em;
     font-size: x-large;
-    padding: 25px 15px;
+    padding-bottom: 25px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 100px) {
