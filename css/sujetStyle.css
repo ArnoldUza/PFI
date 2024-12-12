@@ -69,7 +69,7 @@ header {
 
 aside {
     grid-area: aside;
-    background-color: darkblue;
+    background-image: linear-gradient(lightblue, darkblue);
     color: white;
 }
 
