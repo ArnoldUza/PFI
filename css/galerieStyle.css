@@ -1,0 +1,159 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#conteneur {
+    height: 100vh;
+    padding: 0;
+    background-color:white;
+    display: grid;
+    border: none;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-rows: 80px 2fr 80px;
+    grid-template-areas:
+        "header header header header"
+        "aside main main main"
+        "footer footer footer footer";
+    margin: auto;
+}
+
+#profil {
+  width: 100px;
+  height: 100px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+
+.titre {
+    vertical-align: middle;
+    display: inline;
+    font-size: x-large;
+    padding-bottom: 25px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 100px) {
+    header nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .droite {
+        float: none;
+    }
+}
+
+aside,
+footer {
+    padding: 1em;
+}
+
+header {
+    padding-top: 1em;
+    color: white;
+    grid-area: header;
+    background-color: black;
+}
+
+aside {
+    grid-area: aside;
+    background-color: darkblue;
+    color: white;
+}
+
+
+main {
+    padding: 1em;
+    font-size: larger;
+    grid-area: main;
+    width: 80%;
+    background-color: white;
+}
+
+article {
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+figCaption {
+    font-style: italic;
+}
+
+body div header nav a:hover,
+body div header nav div a:hover {
+    background-color: rgb(33, 33, 199);
+}
+
+body div header nav a,
+body div header nav div a {
+    padding: 25px 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.droite {
+    float: right;
+}
+
+.complément {
+    font-size: large;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+
+
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
